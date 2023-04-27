@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eurekaserver
+    name: microservicio-eureka-server
  # cloud:
   #  config:
    #   enabled: true
@@ -14,4 +14,15 @@ spring:
     location: classpath:banner/banner.txt
     image:
      location: classpath:fotocreador/microservicios.png      
+      
+
+        
+      
+
+
+   
+      
+      
+      
+
       

@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: hackathonchatgptnttdataeurekaserver 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hackathonchatgptnttdataeurekaserver
+  template:
+    metadata:
+      labels:
+        app: hackathonchatgptnttdataeurekaserver 
+    spec:
+      containers:
+        - name: hackathonchatgptnttdataeurekaserver 
+          image: acrcoderpath.azurecr.io/hackathonchatgptnttdataeurekaserver
+          ports:
+          - containerPort: 8761
